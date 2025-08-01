@@ -1,0 +1,15 @@
+Variable,Chi2 Statistic,P-value,Significant
+gender,0.4714,0.4923,No
+sleep_quality,9.4999,0.0233,Yes
+alcohol_consumption,0.1902,0.6627,No
+smoking_level,3.2871,0.1933,No
+mental_health_support,0.5606,0.454,No
+job_type,13.0694,0.0227,Yes
+diet_type,4.3133,0.2296,No
+exercise_type,0.8141,0.6656,No
+device_usage,5.5859,0.0612,No
+healthcare_access,1.598,0.4498,No
+sunlight_exposure,0.8652,0.6488,No
+caffeine_intake,0.0,1.0,No
+family_history,0.0123,0.9117,No
+pet_owner,0.3728,0.5415,No
