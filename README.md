@@ -9,7 +9,7 @@ This project uses machine learning to analyze lifestyle and biometric data to pr
 
 ## 📌 Project Summary
 
-We use a labeled dataset containing biometric, lifestyle, environmental, and behavioral features to build a classification model that predicts whether an individual is **healthy** or at **health risk**. This project demonstrates the power of machine learning in healthcare informatics and preventive diagnostics.
+We use a labeled dataset containing demographic, lifestyle, physiological, and psychological features to build a classification model that predicts whether an individual is **healthy** or **diseased**. This project demonstrates the power of using machine learning in healthcare and diagnosis prevention.
 
 ---
 
@@ -17,7 +17,7 @@ We use a labeled dataset containing biometric, lifestyle, environmental, and beh
 
 Data source: https://www.kaggle.com/datasets/mahdimashayekhi/disease-risk-from-daily-habits
 
-The dataset consists of **17,577 entries** and **39 features**, including:
+The dataset consists of **100,000 entries** and **48 features**, including:
 
 
 ### 📥 Input Features:
@@ -30,59 +30,54 @@ The dataset consists of **17,577 entries** and **39 features**, including:
 
 
 ### 🎯 Target Feature:
-- `target`: Categorical (`healthy` or `at-risk`)
+- `target`: Categorical (`healthy` or `diseased`)
 
 ---
 
 ## 🧠 Machine Learning Workflow
 
 1. **Data Cleaning & Preprocessing**
+   - Dropping irrelevant columns
    - Handling missing values (e.g., `device_usage`)
    - Feature scaling
    - One-hot encoding categorical features
 
 2. **Exploratory Data Analysis (EDA)**
-   - Correlation heatmaps
-   - Distribution plots
-   - Feature importance ranking
+   - Box plots
+   - Chi-square test
+   - Two samples T-test
+   
 
 3. **Modeling**
    - Binary classification using:
      - Logistic Regression
+     - Decision Tree
      - Random Forest
-     - XGBoost
-     - Support Vector Machine (SVM)
-   - Hyperparameter tuning via GridSearchCV
 
-4. **Evaluation**
-   - Accuracy, Precision, Recall, F1-score
-   - Confusion Matrix
-   - ROC Curve & AUC Score
+4. **Optimization**
+   - Balancing data: 
+      - Overfitting 
+      - Underfitting 
+      - SMOTE
+   - VIF (Variance Inflation Factor)   
 
-
-## 🗃️ Repository Structure
-
-Disease-Risk-from-Daily-Habits/
-├── data/
-│ └── Clean_data.csv
-├── notebooks/
-│ └── --.ipynb
-├── models/
-│ └── ----
-├── main.py
-└── README.md
-\
-
+5. **Evaluation**
+   - Accuracy, Precision, MAE, MRSE 
+   
 
 ## 📌  Requirements
 
-- Python 3.8+
+- Python 
 - pandas, numpy, scikit-learn
-- xgboost, matplotlib, seaborn, graphviz
+- matplotlib, seaborn
+- sklearn, imblearn
+- scipy.stats
+- statsmodels (VIF)
   
 
 ## ✅  Future Enhancements:
 
+- Fine-tunning of features for a more accurate model
 - Multiclass classification (e.g., predict specific diseases)
 - Real-time health monitoring from wearable data
 - Personalized health advice with explainable AI
@@ -90,7 +85,7 @@ Disease-Risk-from-Daily-Habits/
 
 ## ✅  Link:
 
-- **Trello:** https://trello.com/b/pm17khhl/machine-learning
+- **Presentation:** https://docs.google.com/presentation/d/1Mr0Iakry8YThLcSKHXwYkBc6evT3Mu9iT_GRbbOuapM/edit?slide=id.g924297ca04_0_1464#slide=id.g924297ca04_0_1464
 
-- **Presentation:** https://docs.google.com/presentation/d/1Mr0Iakry8YThLcSKHXwYkBc6evT3Mu9iT_GRbbOuapM/edit?slide=id.g373d7af2684_0_2&pli=1#slide=id.g373d7af2684_0_2
+Data source: https://www.kaggle.com/datasets/mahdimashayekhi/disease-risk-from-daily-habits
 
